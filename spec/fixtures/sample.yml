@@ -1,0 +1,18 @@
+test:
+  default_queue: https://sqs.us-east-1.amazonaws.com/123456789012/default
+  another_queue: 
+    url: https://sqs.us-east-1.amazonaws.com/123456789012/another
+    weight: 3
+  event_queue:
+    url: https://sqs.us-east-1.amazonaws.com/123456789012/event
+    type: event
+    weight: 2
+  fifo_queue:
+    url: https://sqs.us-east-1.amazonaws.com/123456789012/fifo.fifo
+    weight: 1
+  weight_queue:
+    url: https://sqs.us-east-1.amazonaws.com/123456789012/weight
+    weight: 5
+  weight_queue_invalid:
+    url: https://sqs.us-east-1.amazonaws.com/123456789012/weight_invalid
+    weight: -1

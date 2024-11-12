@@ -1,0 +1,5 @@
+# bin/mongo_queue
+#!/usr/bin/env ruby
+require 'sqs_runner'
+
+SqsRunner::CLI.start(ARGV)
